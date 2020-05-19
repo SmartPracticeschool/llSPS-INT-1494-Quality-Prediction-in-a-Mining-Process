@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+	}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Quality Prediction in Mining</h2>
+</header>
+<form action = "http://localhost:5000/login" method = "post">
+
+<section>
+  <nav>
+    <ul>
+	<li>
+	  <label for="%Ironfeed">Percent of IRONFEED:</label><br>
+	  <br>
+	  <input type="text" id="%Ironfeed" name="iron%"><br>
+	  
+	  <label for="Silicafeed%%">Percent of SILICA FEED:</label><br>
+	  <br>
+	  <input type="text" id="Silicafeed%" name="Silicafeed%"><br>
+	  
+	  <label for="sf%">Scratch Flow:</label><br>
+	  <br>
+	  <input type="text" id="Sf%" name="Sf%"><br>
+	  
+	  <label for="af%">Amina Flow:</label><br>
+	  <br>
+	  <input type="text" id="af%" name="af%"><br>
+	  
+	  <label for="of%">Ore-pulp Flow:</label><br>
+	  <br>
+	  <input type="text" id="of%" name="of%"><br>
+	  
+	  <label for="od">Ore-pulp Density:</label><br>
+	  <br>
+	  <input type="text" id="od" name="od"><br>
+	  
+	  <label for="fl4">Flotation Column 04 Air Flow:</label><br>
+	  <br>
+	  <input type="text" id="fl4%" name="fl4"><br>
+	  
+	  <label for="fl5">Flotation Column 05 Air Flow:</label><br>
+	  <br>
+	  <input type="text" id="fl5%" name="fl5"><br>
+	  
+	  <label for="fl6">Flotation Column 06 Air Flow:</label><br>
+	  <br>
+	  <input type="text" id="fl6%" name="fl6"><br>
+	  
+	  <label for="fl7">Flotation Column 07 Air Flow:</label><br>
+	  <br>
+	  <input type="text" id="fl7%" name="fl7"><br>
+	  
+	  <label for="fle1">Flotation Column 01 Level:</label><br>
+	  <br>
+	  <input type="text" id="fle1%" name="fle1"><br>
+	  
+	  <label for="fle2">Flotation Column 02 Level:</label><br>
+	  <br>
+	  <input type="text" id="fle2%" name="fle2"><br>
+	  
+	  <label for="fle3">Flotation Column 03 Level:</label><br>
+	  <br>
+	  <input type="text" id="fle3%" name="fle3"><br>
+	  
+	  <label for="fle4">Flotation Column 04 Level:</label><br>
+	  <br>
+	  <input type="text" id="fle4%" name="fle4"><br>
+	  
+	  <label for="fle5">Flotation Column 05 Level:</label><br>
+	  <br>
+	  <input type="text" id="fle5%" name="fle5"><br>
+	  
+	  <label for="fle6">Flotation Column 06 Level:</label><br>
+	  <br>
+	  <input type="text" id="fle6%" name="fle6"><br>
+	  
+	  <label for="fle7">Flotation Column 07 Level:</label><br>
+	  <br>
+	  <input type="text" id="fle7%" name="fle7"><br>
+	  
+	  
+	  
+	  </li>
+	<li>
+	  <input type="submit" value="Predict"><br>
+	  </li>
+	  
+    </ul>
+  </nav>
+  <article>
+    <h1>Purity of Silicon</h1>
+    <p><b>Based on the values entered, the purity of silica in the ore concentrate was found to be {{showcase}}</b></p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
