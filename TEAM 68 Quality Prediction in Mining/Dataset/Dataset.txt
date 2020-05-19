@@ -1,0 +1,9 @@
+We were not able to upload the dataset on github due to its large size. The dataset can be accessed on the TEAM 68 folder in the google drive
+
+https://drive.google.com/drive/folders/1ktC7Xe3cXmiBeGDmyAJuR4lbCk80EwBj 
+
+or from this link https://media.githubusercontent.com/media/nishp763/SCS-ML-3253---Final-Project/master/dataset.csv
+
+or from 
+
+https://www.kaggle.com/edumagalhaes/quality-prediction-in-a-mining-process
